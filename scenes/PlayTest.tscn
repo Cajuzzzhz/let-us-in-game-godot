@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dsb0y5utu04h7" path="res://scenes/enemy_placeholder.tscn" id="16_qcfeg"]
 [ext_resource type="PackedScene" uid="uid://ctrbvitl0a7yl" path="res://tools/Rastejador.glb" id="17_40kfu"]
 [ext_resource type="PackedScene" uid="uid://cinf620b434cs" path="res://Andarilho.glb" id="18_pduqs"]
+[ext_resource type="Resource" uid="uid://b1jdisiftqwdx" path="res://items/pills.tres" id="17_40kfu"]
 
 [sub_resource type="Environment" id="Environment_yqjtg"]
 background_color = Color(4.3317675e-07, 0.23796886, 0.32136157, 1)
@@ -276,6 +277,9 @@ libraries/ = SubResource("AnimationLibrary_pduqs")
 
 [node name="Andarilho" parent="." unique_id=118520991 instance=ExtResource("18_pduqs")]
 transform = Transform3D(-0.99957883, 0, -0.029020676, 0, 1, 0, 0.029020676, 0, -0.99957883, 5.0381284, 2.4519615, -6.339271)
+[node name="small_item" parent="." unique_id=81345687 instance=ExtResource("3_ht20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 6)
+item_data = ExtResource("17_40kfu")
 
 [editable path="Map/Cabin/CSGBox3D2/GarageDoor"]
 [editable path="Map/Cabin/CSGBox3D/CSGBox3D/Wheel"]
